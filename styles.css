@@ -1,0 +1,119 @@
+/* Import Albert Sans from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;700&display=swap');
+
+/* Body design */
+body {
+    font-family: 'Albert Sans', sans-serif;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    background-color: #DFF9FF;
+}
+
+/* Background Text Design */
+.background-text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%); 
+    font-size: 100px;
+    color: #ADD8E6; 
+    font-weight: bold;
+    display: none;
+    z-index: -1; 
+}
+
+/* Button design */
+.round-button {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #2CD7FF;
+    background-color: #DFF9FF;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    outline: none;
+    font-family: 'Albert Sans', sans-serif;
+    transition: 0.3s ease-in-out;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.round-button:hover {
+    background-color: lightblue;
+    transform: scale(1.1);
+    box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Rectangle container (Initially hidden) */
+.rectangle-container {
+    display: none; 
+    flex-direction: column;
+    gap: 100px; 
+    margin-top: 20px;
+    opacity: 0;
+    position: absolute;
+    align-items: center; 
+    
+}
+
+/* Box rows (1 & 2 on top, 3 & 4 beneath them) */
+.rectangle-row1 {
+    display: flex;
+    gap: 200px; 
+    
+}
+
+.rectangle-row2 {
+    display: flex;
+    gap: 500px; 
+}
+
+/* Rectangle boxes */
+.rectangle {
+    width: 250px;
+    height: 150px;
+    background-color: rgba(223, 249, 255, 0.5); 
+    border: 3px solid #2CD7FF;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    animation: none;
+}
+
+.rectangle:hover {
+    background-color: lightblue;
+    box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.5);
+    
+}
+
+/* Animation for rectangle boxes appearing */
+@keyframes showBoxes {
+    0% {
+        transform: scale(0) translateY(20px);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.1) translateY(-10px);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1) translateY(0);
+        opacity: 1;
+    }
+}
