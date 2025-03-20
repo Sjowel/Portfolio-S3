@@ -102,6 +102,11 @@ body {
     
 }
 
+.rectangle-link {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit the color of the rectangle */
+}
+
 /* Animation for rectangle boxes appearing */
 @keyframes showBoxes {
     0% {
