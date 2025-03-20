@@ -1,24 +1,26 @@
 /* Import Albert Sans from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;700&display=swap');
 
+/* Body design */
 body {
-    font-family: 'Albert Sans', sans-serif; /* Apply Albert Sans to the whole page */
+    font-family: 'Albert Sans', sans-serif;
     text-align: center;
-    height: 100vh; /* Full height of the viewport */
+    height: 100vh;
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    margin: 0; /* Remove default margin */
-    background-color: #DFF9FF; /* Optional: Light background color */
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: #DFF9FF;
 }
 
+/* Button design */
 .round-button {
     width: 150px;
     height: 150px;
-    border-radius: 50%; /* Makes it circular */
-    border: 3px solid blue; /* Blue border */
-    background-color: #DFF9FF; /* White background */
-    color: #000; /* Text color */
+    border-radius: 50%;
+    border: 3px solid #2CD7FF;
+    background-color: #DFF9FF;
+    color: #000;
     font-size: 20px;
     font-weight: bold;
     cursor: pointer;
@@ -27,9 +29,14 @@ body {
     justify-content: center;
     text-align: center;
     outline: none;
-    font-family: 'Albert Sans', sans-serif; /* Ensures button also uses Albert Sans */
+    font-family: 'Albert Sans', sans-serif;
+    transition: 0.3s ease-in-out;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .round-button:hover {
-    background-color: lightblue; /* Light blue on hover */
+    background-color: lightblue;
+    transform: scale(1.1);
+    box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.5);
 }
+
