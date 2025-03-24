@@ -14,6 +14,14 @@ body {
     background-color: #DFF9FF;
 }
 
+.lo{
+    font-family: 'Albert Sans', sans-serif;
+    text-align: left;
+    max-width: 80%;
+    height: 100vh;
+    margin: 0;
+}
+
 /* Background Text Design */
 .background-text {
     position: absolute;
@@ -105,6 +113,17 @@ body {
 .rectangle-link {
     text-decoration: none; /* Remove underline */
     color: inherit; /* Inherit the color of the rectangle */
+}
+
+.index a{
+    text-decoration: none;
+    color: #2CD7FF;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.index a:hover{
+    color: lightblue;
 }
 
 /* Animation for rectangle boxes appearing */
