@@ -10,18 +10,40 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    scroll-behavior: smooth;
     margin: 0;
     background-color: #DFF9FF;
 }
 
+/* lo body design */
 .lo{
     font-family: 'Albert Sans', sans-serif;
     text-align: left;
     max-width: 80%;
     height: 100vh;
     margin: 0;
+    flex: 1;
 }
 
+.lo h1{
+    color: #00667d;
+    font-size: 40px;
+}
+
+.lo h2{
+    color: #00667d;
+    font-size: 25px;
+}
+
+.lo h3{
+    color: #00667d;
+    font-size: 24px;
+}
+
+.lo p{
+    color: #003d4b;
+    font-size: 20px;
+}
 /* Background Text Design */
 .background-text {
     position: absolute;
@@ -111,19 +133,55 @@ body {
 }
 
 .rectangle-link {
-    text-decoration: none; /* Remove underline */
-    color: inherit; /* Inherit the color of the rectangle */
+    text-decoration: none;
+    color: inherit;
 }
 
+/* Index design */
 .index a{
     text-decoration: none;
     color: #2CD7FF;
     font-weight: bold;
     font-size: 20px;
+    transition: 0.3s ease-in-out;
 }
 
 .index a:hover{
     color: lightblue;
+}
+
+/* lo-box design */
+.lo-box{
+    width: 100%;
+    height: 80%;
+    background-color: rgba(255, 255, 255, 0.5); 
+    border: 3px solid #2CD7FF;
+    margin-top: 80px;
+    color: #000;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    animation: none;
+    padding: 20px;
+}
+
+/* Back button design */
+.back {
+    text-align: center;
+    margin-top: auto;
+    padding: 20px;
+}
+
+.back a {
+    text-decoration: none;
+    color: #2CD7FF;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.3s ease-in-out;
 }
 
 /* Animation for rectangle boxes appearing */
@@ -141,3 +199,4 @@ body {
         opacity: 1;
     }
 }
+
