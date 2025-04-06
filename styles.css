@@ -40,6 +40,11 @@ body {
     font-size: 24px;
 }
 
+.lo h4{
+    color: #00667d;
+    font-size: 40px;
+}
+
 .lo p{
     color: #003d4b;
     font-size: 20px;
@@ -114,14 +119,14 @@ body {
     height: 150px;
     background-color: rgba(223, 249, 255, 0.5); 
     border: 3px solid #2CD7FF;
-    color: #000;
+    color: #00667d;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 25px;
     font-weight: bold;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
-    border-radius: 10px;
+    border-radius: 30px;
     transition: 0.3s ease-in-out;
     animation: none;
 }
@@ -151,22 +156,15 @@ body {
 }
 
 /* lo-box design */
-.lo-box{
-    width: 100%;
-    height: 80%;
-    background-color: rgba(255, 255, 255, 0.5); 
-    border: 3px solid #2CD7FF;
-    margin-top: 80px;
-    color: #000;
-    align-items: center;
-    justify-content: center;
-    font-size: 25px;
-    font-weight: bold;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
-    border-radius: 10px;
-    transition: 0.3s ease-in-out;
-    animation: none;
+.lo-box {
     padding: 20px;
+    margin: 20px auto;
+    max-width: 800px; /* or whatever width suits your layout */
+    background-color: #f9f9f9 50%;
+    border: 3px solid #2CD7FF;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: visible; /* make sure it shows overflowing content */
 }
 
 /* Back button design */
@@ -182,6 +180,10 @@ body {
     font-weight: bold;
     font-size: 30px;
     transition: 0.3s ease-in-out;
+}
+
+.back a:hover{
+    color: lightblue;
 }
 
 /* Animation for rectangle boxes appearing */
