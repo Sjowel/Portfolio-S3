@@ -159,12 +159,12 @@ body {
 .lo-box {
     padding: 20px;
     margin: 20px auto;
-    max-width: 800px; /* or whatever width suits your layout */
+    max-width: 800px;
     background-color: #f9f9f9 50%;
     border: 3px solid #2CD7FF;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    overflow: visible; /* make sure it shows overflowing content */
+    overflow: visible;
 }
 
 /* Back button design */
