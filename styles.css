@@ -25,7 +25,7 @@ body {
     flex: 1;
 }
 
-.lo-title{
+.header-title{
     position: fixed;
     top: 20px;
     left: 20px;
@@ -36,14 +36,23 @@ body {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
+.lo-title {
+    width: 1000px;
+    background: #00667d;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 20px 0 0 200px;
+}
+
 .lo h1{
     color: #e3f9ff;;
     font-size: 40px;
 }
 
 .lo h2{
-    color: #00667d;
-    font-size: 25px;
+    color: #e3f9ff;
+    font-size: 30px;
 }
 
 .lo h3{
@@ -60,6 +69,18 @@ body {
     color: #003d4b;
     font-size: 20px;
 }
+
+/* lo-box design */
+.lo-box {
+    width: 1000px;
+    padding: 20px;
+    margin: 20px 0 0 195px;
+    background-color: #8dc5d1;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: visible;
+}
+
 /* Background Text Design */
 .background-text {
     position: absolute;
@@ -181,7 +202,7 @@ body {
 
 .index1 a{
     text-decoration: none;
-    color: #8dc5d1;
+    color: #e3f9ff;
     font-weight: bold;
     font-size: 20px;
     transition: 0.3s ease-in-out;
@@ -190,18 +211,37 @@ body {
 .index1 a:hover{
     color: #00667d;
 }
-
-/* lo-box design */
-.lo-box {
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    background-color: #f9f9f9 50%;
-    border: 3px solid #8dc5d1;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    overflow: visible;
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start; /* of center */
+    max-width: 1000px; /* optioneel: limiet op de breedte */
+    margin: 0 auto;    /* optioneel: centreren van container */
 }
+
+.project-button {
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #00667d;
+    color: #DFF9FF;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    outline: none;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+}
+.project-button:hover {
+    background-color: lightblue;
+    transform: scale(1.1);
+    box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.5);
+}
+
 
 /* Back button design */
 .back {
