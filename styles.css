@@ -25,8 +25,19 @@ body {
     flex: 1;
 }
 
+.lo-title{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 450px;
+    background: #00667d;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
 .lo h1{
-    color: #00667d;
+    color: #e3f9ff;;
     font-size: 40px;
 }
 
@@ -145,7 +156,7 @@ body {
 /* Index design */
 .index {
     position: fixed;
-    top: 100px;
+    top: 170px;
     left: 20px;
     width: 450px;
     background: #8dc5d1;
@@ -170,14 +181,14 @@ body {
 
 .index1 a{
     text-decoration: none;
-    color: #2CD7FF;
+    color: #8dc5d1;
     font-weight: bold;
     font-size: 20px;
     transition: 0.3s ease-in-out;
 }
 
 .index1 a:hover{
-    color: lightblue;
+    color: #00667d;
 }
 
 /* lo-box design */
@@ -186,7 +197,7 @@ body {
     margin: 20px auto;
     max-width: 800px;
     background-color: #f9f9f9 50%;
-    border: 3px solid #2CD7FF;
+    border: 3px solid #8dc5d1;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     overflow: visible;
