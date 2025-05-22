@@ -143,7 +143,32 @@ body {
 }
 
 /* Index design */
-.index a{
+.index {
+    position: fixed;
+    top: 100px;
+    left: 20px;
+    width: 450px;
+    background: #8dc5d1;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.index a {
+    text-decoration: none;
+    color: #e3f9ff;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.3s ease-in-out;
+    display: block;
+    margin: 35px 0;
+}
+
+.index a:hover {
+    color: lightblue;
+}
+
+.index1 a{
     text-decoration: none;
     color: #2CD7FF;
     font-weight: bold;
@@ -151,7 +176,7 @@ body {
     transition: 0.3s ease-in-out;
 }
 
-.index a:hover{
+.index1 a:hover{
     color: lightblue;
 }
 
@@ -201,4 +226,5 @@ body {
         opacity: 1;
     }
 }
+
 
