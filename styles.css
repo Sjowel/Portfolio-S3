@@ -42,7 +42,7 @@ body {
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    margin: 20px 0 0 200px;
+    margin: 20px 0 0 300px;
 }
 
 .lo h1{
@@ -74,7 +74,7 @@ body {
 .lo-box {
     width: 1000px;
     padding: 20px;
-    margin: 20px 0 0 195px;
+    margin: 20px 0 0 300px;
     background-color: #8dc5d1;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -149,8 +149,8 @@ body {
 .rectangle {
     width: 250px;
     height: 150px;
-    background-color: rgba(223, 249, 255, 0.5); 
-    border: 3px solid #2CD7FF;
+    background-color: #0029323b; 
+    border: 3px ;
     color: #00667d;
     display: flex;
     align-items: center;
@@ -164,7 +164,8 @@ body {
 }
 
 .rectangle:hover {
-    background-color: lightblue;
+    background-color: #00667d;
+    color: #DFF9FF;
     box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.5);
     
 }
@@ -180,7 +181,7 @@ body {
     top: 170px;
     left: 20px;
     width: 450px;
-    background: #8dc5d1;
+    background: linear-gradient(#00667d , #3f9eb3) ;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -205,7 +206,7 @@ body {
     top: 620px;
     left: 20px;
     width: 450px;
-    background: #8dc5d1;
+    background: linear-gradient(#3f9eb3 , #ADD8E6);
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -226,16 +227,16 @@ body {
 }
 
 .index ul, .index2 ul {
-    color: #e3f9ff; /* verandert tekst én bulletkleur */
+    color: #e3f9ff;
 }
 
 .button-container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: flex-start; /* of center */
-    max-width: 1000px; /* optioneel: limiet op de breedte */
-    margin: 0 auto;    /* optioneel: centreren van container */
+    justify-content: flex-start; 
+    max-width: 1000px; 
+    margin: 0 auto;    
 }
 
 .project-button {
