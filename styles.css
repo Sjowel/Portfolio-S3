@@ -16,16 +16,17 @@ body {
 }
 
 /* lo body design */
-.lo{
+.lo {
     font-family: 'Albert Sans', sans-serif;
     text-align: left;
     max-width: 80%;
     height: 100vh;
     margin: 0;
     flex: 1;
+    padding: 20px;
 }
 
-.header-title{
+.header-title {
     position: fixed;
     top: 20px;
     left: 20px;
@@ -34,6 +35,7 @@ body {
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    color: white;
 }
 
 .lo-title {
@@ -43,29 +45,30 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     margin: 20px 0 0 300px;
+    color: white;
 }
 
-.lo h1{
-    color: #e3f9ff;;
+.lo h1 {
+    color: #e3f9ff;
     font-size: 40px;
 }
 
-.lo h2{
+.lo h2 {
     color: #e3f9ff;
     font-size: 30px;
 }
 
-.lo h3{
+.lo h3 {
     color: #00667d;
     font-size: 24px;
 }
 
-.lo h4{
+.lo h4 {
     color: #00667d;
     font-size: 40px;
 }
 
-.lo p{
+.lo p {
     color: #003d4b;
     font-size: 20px;
 }
@@ -86,12 +89,12 @@ body {
     position: absolute;
     top: 30%;
     left: 50%;
-    transform: translateX(-50%); 
+    transform: translateX(-50%);
     font-size: 100px;
-    color: #ADD8E6; 
+    color: #ADD8E6;
     font-weight: bold;
     display: none;
-    z-index: -1; 
+    z-index: -1;
 }
 
 /* Button design */
@@ -123,34 +126,32 @@ body {
 
 /* Rectangle container (Initially hidden) */
 .rectangle-container {
-    display: none; 
+    display: none;
     flex-direction: column;
-    gap: 100px; 
+    gap: 100px;
     margin-top: 20px;
     opacity: 0;
     position: absolute;
-    align-items: center; 
-    
+    align-items: center;
 }
 
 /* Box rows (1 & 2 on top, 3 & 4 beneath them) */
-.rectangle-row1 {
+.rectangle-row1,
+.rectangle-row2 {
     display: flex;
-    gap: 200px; 
-    
+    gap: 200px;
 }
 
 .rectangle-row2 {
-    display: flex;
-    gap: 500px; 
+    gap: 500px;
 }
 
 /* Rectangle boxes */
 .rectangle {
     width: 250px;
     height: 150px;
-    background-color: #0029323b; 
-    border: 3px ;
+    background-color: #0029323b;
+    border: 3px;
     color: #00667d;
     display: flex;
     align-items: center;
@@ -167,7 +168,6 @@ body {
     background-color: #00667d;
     color: #DFF9FF;
     box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.5);
-    
 }
 
 .rectangle-link {
@@ -181,7 +181,7 @@ body {
     top: 170px;
     left: 20px;
     width: 450px;
-    background: linear-gradient(#00667d , #3f9eb3) ;
+    background: linear-gradient(#00667d, #3f9eb3);
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -201,12 +201,12 @@ body {
     color: lightblue;
 }
 
-.index2{
+.index2 {
     position: fixed;
     top: 620px;
     left: 20px;
     width: 450px;
-    background: linear-gradient(#3f9eb3 , #ADD8E6);
+    background: linear-gradient(#3f9eb3, #ADD8E6);
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -222,10 +222,6 @@ body {
     margin: 25px 0;
 }
 
-.index2 a:hover {
-    color: lightblue;
-}
-
 .index ul, .index2 ul {
     color: #e3f9ff;
 }
@@ -234,9 +230,9 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: flex-start; 
-    max-width: 1000px; 
-    margin: 0 auto;    
+    justify-content: flex-start;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .project-button {
@@ -255,12 +251,12 @@ body {
     transition: 0.3s ease-in-out;
     text-decoration: none;
 }
+
 .project-button:hover {
     background-color: lightblue;
     transform: scale(1.1);
     box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.5);
 }
-
 
 /* Back button design */
 .back {
@@ -277,7 +273,7 @@ body {
     transition: 0.3s ease-in-out;
 }
 
-.back a:hover{
+.back a:hover {
     color: lightblue;
 }
 
@@ -297,4 +293,109 @@ body {
     }
 }
 
+/* === RESPONSIVE STIJLEN === */
+@media (max-width: 1024px) {
+    .header-title,
+    .index,
+    .index2 {
+        width: 90%;
+        left: 5%;
+    }
 
+    .lo-title,
+    .lo-box,
+    .button-container {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .rectangle-row1,
+    .rectangle-row2 {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .rectangle {
+        width: 90%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .lo {
+        max-width: 95%;
+        padding: 10px;
+    }
+
+    .header-title {
+        position: static;
+        width: 100%;
+        margin: 0 auto 20px auto;
+    }
+
+    .index,
+    .index2 {
+        position: static;
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .index a,
+    .index2 a {
+        font-size: 18px;
+        margin: 15px 0;
+    }
+
+    .round-button {
+        width: 120px;
+        height: 120px;
+        font-size: 16px;
+    }
+
+    .rectangle-container {
+        gap: 50px;
+    }
+
+    .rectangle {
+        font-size: 20px;
+    }
+
+    .back a {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .lo h1 {
+        font-size: 30px;
+    }
+
+    .lo h2 {
+        font-size: 24px;
+    }
+
+    .lo p {
+        font-size: 16px;
+    }
+
+    .project-button {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .round-button {
+        width: 100px;
+        height: 100px;
+        font-size: 14px;
+    }
+
+    .rectangle {
+        height: 120px;
+    }
+
+    .rectangle-container {
+        position: static;
+        opacity: 1;
+    }
+}
